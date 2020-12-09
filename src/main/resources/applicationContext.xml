@@ -6,7 +6,8 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd
-                           http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd">
+                           http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/context ">
     <!-- Spring 和 SpringMVC的配置文件 -->
     <!-- 这是Spring配置部分 -->
     <!--  开启扫描组件  -->
@@ -16,7 +17,7 @@
     <bean id="druid" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
         <property name="url" value="jdbc:mysql://localhost:3306/stu?serverTimezone=UTC&amp;characterEncoding=utf-8"/>
         <property name="username" value="root"/>
-        <property name="password" value="25666524qq"/>
+        <property name="password" value="15766497895hzk"/>
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
 
         <property name="initialSize" value="5"/>
@@ -33,7 +34,8 @@
         <property name="maxPoolPreparedStatementPerConnectionSize" value="20"/>
         <property name="filters" value="stat,wall"/>
         <property name="connectionProperties" value="druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000"/>
-        <property name="validConnectionCheckerClassName" value="com.alibaba.druid.pool.vendor.MSSQLValidConnectionChecker"/>
+        <property name="validConnectionCheckerClassName"
+                  value="com.alibaba.druid.pool.vendor.MSSQLValidConnectionChecker"/>
     </bean>
 
     <!--  注入jdbcTemplate，用于与数据库的交互  -->
@@ -49,14 +51,14 @@
 
     <!-- mapper注入底层必要组件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-<!--        <property name="configLocation" value="classpath:mybatis-configuration.xml"/>-->
+        <!--        <property name="configLocation" value="classpath:mybatis-configuration.xml"/>-->
         <property name="dataSource" ref="druid"/>
         <property name="mapperLocations" value="classpath*:com/stuforum/demo/dao/*.xml"/>
     </bean>
 
     <!-- 将mapper自动扫描注入bean -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-                <!-- 基本包 -->
+        <!-- 基本包 -->
         <property name="basePackage" value="com.stuforum.demo.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
