@@ -2,10 +2,8 @@ package com.stuforum.demo.dao;
 
 import com.stuforum.demo.entity.CommentInfo;
 import com.stuforum.demo.entity.CommentInfoExample;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
-@Repository
+
 public interface CommentInfoMapper {
     int deleteByPrimaryKey(Long id);
 

@@ -354,66 +354,6 @@ public class CategoryInfoExample {
             addCriterion("create_by not between", value1, value2, "create_by");
             return (Criteria) this;
         }
-
-        public Criteria andModified_byIsNull() {
-            addCriterion("modified_by is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byIsNotNull() {
-            addCriterion("modified_by is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byEqualTo(Date value) {
-            addCriterion("modified_by =", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byNotEqualTo(Date value) {
-            addCriterion("modified_by <>", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byGreaterThan(Date value) {
-            addCriterion("modified_by >", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("modified_by >=", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byLessThan(Date value) {
-            addCriterion("modified_by <", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byLessThanOrEqualTo(Date value) {
-            addCriterion("modified_by <=", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byIn(List<Date> values) {
-            addCriterion("modified_by in", values, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byNotIn(List<Date> values) {
-            addCriterion("modified_by not in", values, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byBetween(Date value1, Date value2) {
-            addCriterion("modified_by between", value1, value2, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byNotBetween(Date value1, Date value2) {
-            addCriterion("modified_by not between", value1, value2, "modified_by");
-            return (Criteria) this;
-        }
     }
 
     public static class Criteria extends GeneratedCriteria {

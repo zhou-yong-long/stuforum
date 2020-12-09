@@ -23,10 +23,10 @@ public class ArticleServiceImpl implements ArticleService {
         ArticleInfo info = new ArticleInfo();
         info.setCreate_by(new Date(System.currentTimeMillis()));
         info.setIs_top(true);
-        info.setSummary("你好");
         info.setTitle("hhh");
-        info.setModified_by(new Date(System.currentTimeMillis()));
-        info.setTraffic(0);
+        info.setLikes(0);
+        info.setTranffic(0);
+        info.setUser_id(1L);
         articleInfoMapper.insert(info);
         return true;
     }

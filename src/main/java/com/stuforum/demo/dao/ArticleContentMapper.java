@@ -2,10 +2,8 @@ package com.stuforum.demo.dao;
 
 import com.stuforum.demo.entity.ArticleContent;
 import com.stuforum.demo.entity.ArticleContentExample;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
-@Repository
+
 public interface ArticleContentMapper {
     int deleteByPrimaryKey(Long id);
 

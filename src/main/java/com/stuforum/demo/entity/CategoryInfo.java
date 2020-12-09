@@ -11,8 +11,6 @@ public class CategoryInfo {
 
     private Date create_by;
 
-    private Date modified_by;
-
     public Long getId() {
         return id;
     }
@@ -43,13 +41,5 @@ public class CategoryInfo {
 
     public void setCreate_by(Date create_by) {
         this.create_by = create_by;
-    }
-
-    public Date getModified_by() {
-        return modified_by;
-    }
-
-    public void setModified_by(Date modified_by) {
-        this.modified_by = modified_by;
     }
 }

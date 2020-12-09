@@ -5,7 +5,6 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="article_id" jdbcType="BIGINT" property="article_id" />
     <result column="create_by" jdbcType="TIMESTAMP" property="create_by" />
-    <result column="modifield_by" jdbcType="TIMESTAMP" property="modifield_by" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.stuforum.demo.entity.ArticleContent">
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
@@ -40,7 +39,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, article_id, create_by, modifield_by
+    id, article_id, create_by
   </sql>
   <sql id="Blob_Column_List">
     content
@@ -90,10 +89,10 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.stuforum.demo.entity.ArticleContent" useGeneratedKeys="true">
-    insert into tbl_article_content (article_id, create_by, modifield_by, 
-      content)
-    values (#{article_id,jdbcType=BIGINT}, #{create_by,jdbcType=TIMESTAMP}, #{modifield_by,jdbcType=TIMESTAMP}, 
-      #{content,jdbcType=LONGVARCHAR})
+    insert into tbl_article_content (article_id, create_by, content
+      )
+    values (#{article_id,jdbcType=BIGINT}, #{create_by,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}
+      )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.stuforum.demo.entity.ArticleContent" useGeneratedKeys="true">
     insert into tbl_article_content
@@ -103,9 +102,6 @@
       </if>
       <if test="create_by != null">
         create_by,
-      </if>
-      <if test="modifield_by != null">
-        modifield_by,
       </if>
       <if test="content != null">
         content,
@@ -117,9 +113,6 @@
       </if>
       <if test="create_by != null">
         #{create_by,jdbcType=TIMESTAMP},
-      </if>
-      <if test="modifield_by != null">
-        #{modifield_by,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null">
         #{content,jdbcType=LONGVARCHAR},
@@ -135,9 +128,6 @@
       <if test="create_by != null">
         create_by = #{create_by,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifield_by != null">
-        modifield_by = #{modifield_by,jdbcType=TIMESTAMP},
-      </if>
       <if test="content != null">
         content = #{content,jdbcType=LONGVARCHAR},
       </if>
@@ -148,15 +138,13 @@
     update tbl_article_content
     set article_id = #{article_id,jdbcType=BIGINT},
       create_by = #{create_by,jdbcType=TIMESTAMP},
-      modifield_by = #{modifield_by,jdbcType=TIMESTAMP},
       content = #{content,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.stuforum.demo.entity.ArticleContent">
     update tbl_article_content
     set article_id = #{article_id,jdbcType=BIGINT},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
-      modifield_by = #{modifield_by,jdbcType=TIMESTAMP}
+      create_by = #{create_by,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

@@ -235,76 +235,6 @@ public class ArticleInfoExample {
             return (Criteria) this;
         }
 
-        public Criteria andSummaryIsNull() {
-            addCriterion("summary is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryIsNotNull() {
-            addCriterion("summary is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryEqualTo(String value) {
-            addCriterion("summary =", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryNotEqualTo(String value) {
-            addCriterion("summary <>", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryGreaterThan(String value) {
-            addCriterion("summary >", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryGreaterThanOrEqualTo(String value) {
-            addCriterion("summary >=", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryLessThan(String value) {
-            addCriterion("summary <", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryLessThanOrEqualTo(String value) {
-            addCriterion("summary <=", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryLike(String value) {
-            addCriterion("summary like", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryNotLike(String value) {
-            addCriterion("summary not like", value, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryIn(List<String> values) {
-            addCriterion("summary in", values, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryNotIn(List<String> values) {
-            addCriterion("summary not in", values, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryBetween(String value1, String value2) {
-            addCriterion("summary between", value1, value2, "summary");
-            return (Criteria) this;
-        }
-
-        public Criteria andSummaryNotBetween(String value1, String value2) {
-            addCriterion("summary not between", value1, value2, "summary");
-            return (Criteria) this;
-        }
-
         public Criteria andIs_topIsNull() {
             addCriterion("is_top is null");
             return (Criteria) this;
@@ -362,66 +292,6 @@ public class ArticleInfoExample {
 
         public Criteria andIs_topNotBetween(Boolean value1, Boolean value2) {
             addCriterion("is_top not between", value1, value2, "is_top");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficIsNull() {
-            addCriterion("traffic is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficIsNotNull() {
-            addCriterion("traffic is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficEqualTo(Integer value) {
-            addCriterion("traffic =", value, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficNotEqualTo(Integer value) {
-            addCriterion("traffic <>", value, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficGreaterThan(Integer value) {
-            addCriterion("traffic >", value, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficGreaterThanOrEqualTo(Integer value) {
-            addCriterion("traffic >=", value, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficLessThan(Integer value) {
-            addCriterion("traffic <", value, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficLessThanOrEqualTo(Integer value) {
-            addCriterion("traffic <=", value, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficIn(List<Integer> values) {
-            addCriterion("traffic in", values, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficNotIn(List<Integer> values) {
-            addCriterion("traffic not in", values, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficBetween(Integer value1, Integer value2) {
-            addCriterion("traffic between", value1, value2, "traffic");
-            return (Criteria) this;
-        }
-
-        public Criteria andTrafficNotBetween(Integer value1, Integer value2) {
-            addCriterion("traffic not between", value1, value2, "traffic");
             return (Criteria) this;
         }
 
@@ -485,63 +355,183 @@ public class ArticleInfoExample {
             return (Criteria) this;
         }
 
-        public Criteria andModified_byIsNull() {
-            addCriterion("modified_by is null");
+        public Criteria andUser_idIsNull() {
+            addCriterion("user_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byIsNotNull() {
-            addCriterion("modified_by is not null");
+        public Criteria andUser_idIsNotNull() {
+            addCriterion("user_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byEqualTo(Date value) {
-            addCriterion("modified_by =", value, "modified_by");
+        public Criteria andUser_idEqualTo(Long value) {
+            addCriterion("user_id =", value, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byNotEqualTo(Date value) {
-            addCriterion("modified_by <>", value, "modified_by");
+        public Criteria andUser_idNotEqualTo(Long value) {
+            addCriterion("user_id <>", value, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byGreaterThan(Date value) {
-            addCriterion("modified_by >", value, "modified_by");
+        public Criteria andUser_idGreaterThan(Long value) {
+            addCriterion("user_id >", value, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("modified_by >=", value, "modified_by");
+        public Criteria andUser_idGreaterThanOrEqualTo(Long value) {
+            addCriterion("user_id >=", value, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byLessThan(Date value) {
-            addCriterion("modified_by <", value, "modified_by");
+        public Criteria andUser_idLessThan(Long value) {
+            addCriterion("user_id <", value, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byLessThanOrEqualTo(Date value) {
-            addCriterion("modified_by <=", value, "modified_by");
+        public Criteria andUser_idLessThanOrEqualTo(Long value) {
+            addCriterion("user_id <=", value, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byIn(List<Date> values) {
-            addCriterion("modified_by in", values, "modified_by");
+        public Criteria andUser_idIn(List<Long> values) {
+            addCriterion("user_id in", values, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byNotIn(List<Date> values) {
-            addCriterion("modified_by not in", values, "modified_by");
+        public Criteria andUser_idNotIn(List<Long> values) {
+            addCriterion("user_id not in", values, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byBetween(Date value1, Date value2) {
-            addCriterion("modified_by between", value1, value2, "modified_by");
+        public Criteria andUser_idBetween(Long value1, Long value2) {
+            addCriterion("user_id between", value1, value2, "user_id");
             return (Criteria) this;
         }
 
-        public Criteria andModified_byNotBetween(Date value1, Date value2) {
-            addCriterion("modified_by not between", value1, value2, "modified_by");
+        public Criteria andUser_idNotBetween(Long value1, Long value2) {
+            addCriterion("user_id not between", value1, value2, "user_id");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficIsNull() {
+            addCriterion("tranffic is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficIsNotNull() {
+            addCriterion("tranffic is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficEqualTo(Integer value) {
+            addCriterion("tranffic =", value, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficNotEqualTo(Integer value) {
+            addCriterion("tranffic <>", value, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficGreaterThan(Integer value) {
+            addCriterion("tranffic >", value, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficGreaterThanOrEqualTo(Integer value) {
+            addCriterion("tranffic >=", value, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficLessThan(Integer value) {
+            addCriterion("tranffic <", value, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficLessThanOrEqualTo(Integer value) {
+            addCriterion("tranffic <=", value, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficIn(List<Integer> values) {
+            addCriterion("tranffic in", values, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficNotIn(List<Integer> values) {
+            addCriterion("tranffic not in", values, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficBetween(Integer value1, Integer value2) {
+            addCriterion("tranffic between", value1, value2, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andTranfficNotBetween(Integer value1, Integer value2) {
+            addCriterion("tranffic not between", value1, value2, "tranffic");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesIsNull() {
+            addCriterion("likes is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesIsNotNull() {
+            addCriterion("likes is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesEqualTo(Integer value) {
+            addCriterion("likes =", value, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesNotEqualTo(Integer value) {
+            addCriterion("likes <>", value, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesGreaterThan(Integer value) {
+            addCriterion("likes >", value, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesGreaterThanOrEqualTo(Integer value) {
+            addCriterion("likes >=", value, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesLessThan(Integer value) {
+            addCriterion("likes <", value, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesLessThanOrEqualTo(Integer value) {
+            addCriterion("likes <=", value, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesIn(List<Integer> values) {
+            addCriterion("likes in", values, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesNotIn(List<Integer> values) {
+            addCriterion("likes not in", values, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesBetween(Integer value1, Integer value2) {
+            addCriterion("likes between", value1, value2, "likes");
+            return (Criteria) this;
+        }
+
+        public Criteria andLikesNotBetween(Integer value1, Integer value2) {
+            addCriterion("likes not between", value1, value2, "likes");
             return (Criteria) this;
         }
     }

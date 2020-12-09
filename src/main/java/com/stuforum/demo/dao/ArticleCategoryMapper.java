@@ -2,11 +2,8 @@ package com.stuforum.demo.dao;
 
 import com.stuforum.demo.entity.ArticleCategory;
 import com.stuforum.demo.entity.ArticleCategoryExample;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
-@Repository
+
 public interface ArticleCategoryMapper {
     int deleteByPrimaryKey(Long id);
 

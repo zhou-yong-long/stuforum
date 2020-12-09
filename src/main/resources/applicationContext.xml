@@ -14,7 +14,7 @@
 
     <!--  设置德鲁伊连接池配置  -->
     <bean id="druid" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
-        <property name="url" value="jdbc:mysql://localhost:3306/book?serverTimezone=UTC&amp;characterEncoding=utf-8"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/stu?serverTimezone=UTC&amp;characterEncoding=utf-8"/>
         <property name="username" value="root"/>
         <property name="password" value="25666524qq"/>
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
@@ -49,8 +49,9 @@
 
     <!-- mapper注入底层必要组件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--        <property name="configLocation" value="classpath:mybatis-configuration.xml"/>-->
         <property name="dataSource" ref="druid"/>
-        <property name="mapperLocations" value="classpath:/com/stuforum/demo/dao/*.xml"/>
+        <property name="mapperLocations" value="classpath*:com/stuforum/demo/dao/*.xml"/>
     </bean>
 
     <!-- 将mapper自动扫描注入bean -->

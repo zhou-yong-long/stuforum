@@ -7,11 +7,9 @@ public class ArticlePicture {
 
     private Long article_id;
 
-    private String picture_url;
+    private Long picture_id;
 
     private Date create_by;
-
-    private Date modified_by;
 
     public Long getId() {
         return id;
@@ -29,12 +27,12 @@ public class ArticlePicture {
         this.article_id = article_id;
     }
 
-    public String getPicture_url() {
-        return picture_url;
+    public Long getPicture_id() {
+        return picture_id;
     }
 
-    public void setPicture_url(String picture_url) {
-        this.picture_url = picture_url == null ? null : picture_url.trim();
+    public void setPicture_id(Long picture_id) {
+        this.picture_id = picture_id;
     }
 
     public Date getCreate_by() {
@@ -43,13 +41,5 @@ public class ArticlePicture {
 
     public void setCreate_by(Date create_by) {
         this.create_by = create_by;
-    }
-
-    public Date getModified_by() {
-        return modified_by;
-    }
-
-    public void setModified_by(Date modified_by) {
-        this.modified_by = modified_by;
     }
 }

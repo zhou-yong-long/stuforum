@@ -284,66 +284,6 @@ public class ArticleContentExample {
             addCriterion("create_by not between", value1, value2, "create_by");
             return (Criteria) this;
         }
-
-        public Criteria andModifield_byIsNull() {
-            addCriterion("modifield_by is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byIsNotNull() {
-            addCriterion("modifield_by is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byEqualTo(Date value) {
-            addCriterion("modifield_by =", value, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byNotEqualTo(Date value) {
-            addCriterion("modifield_by <>", value, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byGreaterThan(Date value) {
-            addCriterion("modifield_by >", value, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("modifield_by >=", value, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byLessThan(Date value) {
-            addCriterion("modifield_by <", value, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byLessThanOrEqualTo(Date value) {
-            addCriterion("modifield_by <=", value, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byIn(List<Date> values) {
-            addCriterion("modifield_by in", values, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byNotIn(List<Date> values) {
-            addCriterion("modifield_by not in", values, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byBetween(Date value1, Date value2) {
-            addCriterion("modifield_by between", value1, value2, "modifield_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifield_byNotBetween(Date value1, Date value2) {
-            addCriterion("modifield_by not between", value1, value2, "modifield_by");
-            return (Criteria) this;
-        }
     }
 
     public static class Criteria extends GeneratedCriteria {

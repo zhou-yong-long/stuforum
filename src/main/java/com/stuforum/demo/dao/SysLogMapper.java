@@ -2,10 +2,8 @@ package com.stuforum.demo.dao;
 
 import com.stuforum.demo.entity.SysLog;
 import com.stuforum.demo.entity.SysLogExample;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
-@Repository
+
 public interface SysLogMapper {
     int deleteByPrimaryKey(Long id);
 

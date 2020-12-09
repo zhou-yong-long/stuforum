@@ -4,6 +4,7 @@ import com.stuforum.demo.service.ArticleService;
 import com.stuforum.demo.service.impl.ArticleServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -19,7 +20,8 @@ import static org.junit.Assert.*;
 @WebAppConfiguration
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public class ArticleServiceImplTest {
-    ArticleService articleService = new ArticleServiceImpl();
+    @Autowired
+    ArticleService articleService ;
     @Test
     public void addArticle() {
         System.out.println(articleService.addArticle());

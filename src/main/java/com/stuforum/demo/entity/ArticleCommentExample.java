@@ -225,63 +225,63 @@ public class ArticleCommentExample {
             return (Criteria) this;
         }
 
-        public Criteria andComment_idIsNull() {
-            addCriterion("comment_id is null");
+        public Criteria andMessage_idIsNull() {
+            addCriterion("message_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idIsNotNull() {
-            addCriterion("comment_id is not null");
+        public Criteria andMessage_idIsNotNull() {
+            addCriterion("message_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idEqualTo(Long value) {
-            addCriterion("comment_id =", value, "comment_id");
+        public Criteria andMessage_idEqualTo(Long value) {
+            addCriterion("message_id =", value, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idNotEqualTo(Long value) {
-            addCriterion("comment_id <>", value, "comment_id");
+        public Criteria andMessage_idNotEqualTo(Long value) {
+            addCriterion("message_id <>", value, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idGreaterThan(Long value) {
-            addCriterion("comment_id >", value, "comment_id");
+        public Criteria andMessage_idGreaterThan(Long value) {
+            addCriterion("message_id >", value, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idGreaterThanOrEqualTo(Long value) {
-            addCriterion("comment_id >=", value, "comment_id");
+        public Criteria andMessage_idGreaterThanOrEqualTo(Long value) {
+            addCriterion("message_id >=", value, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idLessThan(Long value) {
-            addCriterion("comment_id <", value, "comment_id");
+        public Criteria andMessage_idLessThan(Long value) {
+            addCriterion("message_id <", value, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idLessThanOrEqualTo(Long value) {
-            addCriterion("comment_id <=", value, "comment_id");
+        public Criteria andMessage_idLessThanOrEqualTo(Long value) {
+            addCriterion("message_id <=", value, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idIn(List<Long> values) {
-            addCriterion("comment_id in", values, "comment_id");
+        public Criteria andMessage_idIn(List<Long> values) {
+            addCriterion("message_id in", values, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idNotIn(List<Long> values) {
-            addCriterion("comment_id not in", values, "comment_id");
+        public Criteria andMessage_idNotIn(List<Long> values) {
+            addCriterion("message_id not in", values, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idBetween(Long value1, Long value2) {
-            addCriterion("comment_id between", value1, value2, "comment_id");
+        public Criteria andMessage_idBetween(Long value1, Long value2) {
+            addCriterion("message_id between", value1, value2, "message_id");
             return (Criteria) this;
         }
 
-        public Criteria andComment_idNotBetween(Long value1, Long value2) {
-            addCriterion("comment_id not between", value1, value2, "comment_id");
+        public Criteria andMessage_idNotBetween(Long value1, Long value2) {
+            addCriterion("message_id not between", value1, value2, "message_id");
             return (Criteria) this;
         }
 

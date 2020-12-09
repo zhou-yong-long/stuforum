@@ -7,15 +7,15 @@ public class ArticleInfo {
 
     private String title;
 
-    private String summary;
-
     private Boolean is_top;
-
-    private Integer traffic;
 
     private Date create_by;
 
-    private Date modified_by;
+    private Long user_id;
+
+    private Integer tranffic;
+
+    private Integer likes;
 
     public Long getId() {
         return id;
@@ -33,28 +33,12 @@ public class ArticleInfo {
         this.title = title == null ? null : title.trim();
     }
 
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary == null ? null : summary.trim();
-    }
-
     public Boolean getIs_top() {
         return is_top;
     }
 
     public void setIs_top(Boolean is_top) {
         this.is_top = is_top;
-    }
-
-    public Integer getTraffic() {
-        return traffic;
-    }
-
-    public void setTraffic(Integer traffic) {
-        this.traffic = traffic;
     }
 
     public Date getCreate_by() {
@@ -65,11 +49,27 @@ public class ArticleInfo {
         this.create_by = create_by;
     }
 
-    public Date getModified_by() {
-        return modified_by;
+    public Long getUser_id() {
+        return user_id;
     }
 
-    public void setModified_by(Date modified_by) {
-        this.modified_by = modified_by;
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
+    }
+
+    public Integer getTranffic() {
+        return tranffic;
+    }
+
+    public void setTranffic(Integer tranffic) {
+        this.tranffic = tranffic;
+    }
+
+    public Integer getLikes() {
+        return likes;
+    }
+
+    public void setLikes(Integer likes) {
+        this.likes = likes;
     }
 }

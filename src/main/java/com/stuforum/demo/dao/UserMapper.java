@@ -2,10 +2,8 @@ package com.stuforum.demo.dao;
 
 import com.stuforum.demo.entity.User;
 import com.stuforum.demo.entity.UserExample;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
-@Repository
+
 public interface UserMapper {
     int deleteByPrimaryKey(Long id);
 

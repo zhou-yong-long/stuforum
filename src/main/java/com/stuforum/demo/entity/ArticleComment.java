@@ -7,7 +7,7 @@ public class ArticleComment {
 
     private Long article_id;
 
-    private Long comment_id;
+    private Long message_id;
 
     private Date create_by;
 
@@ -29,12 +29,12 @@ public class ArticleComment {
         this.article_id = article_id;
     }
 
-    public Long getComment_id() {
-        return comment_id;
+    public Long getMessage_id() {
+        return message_id;
     }
 
-    public void setComment_id(Long comment_id) {
-        this.comment_id = comment_id;
+    public void setMessage_id(Long message_id) {
+        this.message_id = message_id;
     }
 
     public Date getCreate_by() {

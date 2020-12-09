@@ -4,9 +4,8 @@
   <resultMap id="BaseResultMap" type="com.stuforum.demo.entity.ArticlePicture">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="article_id" jdbcType="BIGINT" property="article_id" />
-    <result column="picture_url" jdbcType="VARCHAR" property="picture_url" />
+    <result column="picture_id" jdbcType="BIGINT" property="picture_id" />
     <result column="create_by" jdbcType="TIMESTAMP" property="create_by" />
-    <result column="modified_by" jdbcType="TIMESTAMP" property="modified_by" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -38,7 +37,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, article_id, picture_url, create_by, modified_by
+    id, article_id, picture_id, create_by
   </sql>
   <select id="selectByExample" parameterType="com.stuforum.demo.entity.ArticlePictureExample" resultMap="BaseResultMap">
     select
@@ -66,10 +65,10 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.stuforum.demo.entity.ArticlePicture" useGeneratedKeys="true">
-    insert into tbl_article_picture (article_id, picture_url, create_by, 
-      modified_by)
-    values (#{article_id,jdbcType=BIGINT}, #{picture_url,jdbcType=VARCHAR}, #{create_by,jdbcType=TIMESTAMP}, 
-      #{modified_by,jdbcType=TIMESTAMP})
+    insert into tbl_article_picture (article_id, picture_id, create_by
+      )
+    values (#{article_id,jdbcType=BIGINT}, #{picture_id,jdbcType=BIGINT}, #{create_by,jdbcType=TIMESTAMP}
+      )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.stuforum.demo.entity.ArticlePicture" useGeneratedKeys="true">
     insert into tbl_article_picture
@@ -77,28 +76,22 @@
       <if test="article_id != null">
         article_id,
       </if>
-      <if test="picture_url != null">
-        picture_url,
+      <if test="picture_id != null">
+        picture_id,
       </if>
       <if test="create_by != null">
         create_by,
-      </if>
-      <if test="modified_by != null">
-        modified_by,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="article_id != null">
         #{article_id,jdbcType=BIGINT},
       </if>
-      <if test="picture_url != null">
-        #{picture_url,jdbcType=VARCHAR},
+      <if test="picture_id != null">
+        #{picture_id,jdbcType=BIGINT},
       </if>
       <if test="create_by != null">
         #{create_by,jdbcType=TIMESTAMP},
-      </if>
-      <if test="modified_by != null">
-        #{modified_by,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -108,14 +101,11 @@
       <if test="article_id != null">
         article_id = #{article_id,jdbcType=BIGINT},
       </if>
-      <if test="picture_url != null">
-        picture_url = #{picture_url,jdbcType=VARCHAR},
+      <if test="picture_id != null">
+        picture_id = #{picture_id,jdbcType=BIGINT},
       </if>
       <if test="create_by != null">
         create_by = #{create_by,jdbcType=TIMESTAMP},
-      </if>
-      <if test="modified_by != null">
-        modified_by = #{modified_by,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -123,9 +113,8 @@
   <update id="updateByPrimaryKey" parameterType="com.stuforum.demo.entity.ArticlePicture">
     update tbl_article_picture
     set article_id = #{article_id,jdbcType=BIGINT},
-      picture_url = #{picture_url,jdbcType=VARCHAR},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
-      modified_by = #{modified_by,jdbcType=TIMESTAMP}
+      picture_id = #{picture_id,jdbcType=BIGINT},
+      create_by = #{create_by,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

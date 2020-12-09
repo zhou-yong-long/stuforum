@@ -2,10 +2,8 @@ package com.stuforum.demo.dao;
 
 import com.stuforum.demo.entity.PictureInfo;
 import com.stuforum.demo.entity.PictureInfoExample;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
-@Repository
+
 public interface PictureInfoMapper {
     int deleteByPrimaryKey(Long id);
 

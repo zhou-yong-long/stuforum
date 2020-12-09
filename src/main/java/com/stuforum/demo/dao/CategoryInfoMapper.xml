@@ -6,7 +6,6 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="number" jdbcType="TINYINT" property="number" />
     <result column="create_by" jdbcType="TIMESTAMP" property="create_by" />
-    <result column="modified_by" jdbcType="TIMESTAMP" property="modified_by" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -38,7 +37,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, number, create_by, modified_by
+    id, name, number, create_by
   </sql>
   <select id="selectByExample" parameterType="com.stuforum.demo.entity.CategoryInfoExample" resultMap="BaseResultMap">
     select
@@ -66,10 +65,10 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.stuforum.demo.entity.CategoryInfo" useGeneratedKeys="true">
-    insert into tbl_category_info (name, number, create_by, 
-      modified_by)
-    values (#{name,jdbcType=VARCHAR}, #{number,jdbcType=TINYINT}, #{create_by,jdbcType=TIMESTAMP}, 
-      #{modified_by,jdbcType=TIMESTAMP})
+    insert into tbl_category_info (name, number, create_by
+      )
+    values (#{name,jdbcType=VARCHAR}, #{number,jdbcType=TINYINT}, #{create_by,jdbcType=TIMESTAMP}
+      )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.stuforum.demo.entity.CategoryInfo" useGeneratedKeys="true">
     insert into tbl_category_info
@@ -83,9 +82,6 @@
       <if test="create_by != null">
         create_by,
       </if>
-      <if test="modified_by != null">
-        modified_by,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="name != null">
@@ -96,9 +92,6 @@
       </if>
       <if test="create_by != null">
         #{create_by,jdbcType=TIMESTAMP},
-      </if>
-      <if test="modified_by != null">
-        #{modified_by,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -114,9 +107,6 @@
       <if test="create_by != null">
         create_by = #{create_by,jdbcType=TIMESTAMP},
       </if>
-      <if test="modified_by != null">
-        modified_by = #{modified_by,jdbcType=TIMESTAMP},
-      </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
@@ -124,8 +114,7 @@
     update tbl_category_info
     set name = #{name,jdbcType=VARCHAR},
       number = #{number,jdbcType=TINYINT},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
-      modified_by = #{modified_by,jdbcType=TIMESTAMP}
+      create_by = #{create_by,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

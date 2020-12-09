@@ -225,73 +225,63 @@ public class ArticlePictureExample {
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlIsNull() {
-            addCriterion("picture_url is null");
+        public Criteria andPicture_idIsNull() {
+            addCriterion("picture_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlIsNotNull() {
-            addCriterion("picture_url is not null");
+        public Criteria andPicture_idIsNotNull() {
+            addCriterion("picture_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlEqualTo(String value) {
-            addCriterion("picture_url =", value, "picture_url");
+        public Criteria andPicture_idEqualTo(Long value) {
+            addCriterion("picture_id =", value, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlNotEqualTo(String value) {
-            addCriterion("picture_url <>", value, "picture_url");
+        public Criteria andPicture_idNotEqualTo(Long value) {
+            addCriterion("picture_id <>", value, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlGreaterThan(String value) {
-            addCriterion("picture_url >", value, "picture_url");
+        public Criteria andPicture_idGreaterThan(Long value) {
+            addCriterion("picture_id >", value, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlGreaterThanOrEqualTo(String value) {
-            addCriterion("picture_url >=", value, "picture_url");
+        public Criteria andPicture_idGreaterThanOrEqualTo(Long value) {
+            addCriterion("picture_id >=", value, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlLessThan(String value) {
-            addCriterion("picture_url <", value, "picture_url");
+        public Criteria andPicture_idLessThan(Long value) {
+            addCriterion("picture_id <", value, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlLessThanOrEqualTo(String value) {
-            addCriterion("picture_url <=", value, "picture_url");
+        public Criteria andPicture_idLessThanOrEqualTo(Long value) {
+            addCriterion("picture_id <=", value, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlLike(String value) {
-            addCriterion("picture_url like", value, "picture_url");
+        public Criteria andPicture_idIn(List<Long> values) {
+            addCriterion("picture_id in", values, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlNotLike(String value) {
-            addCriterion("picture_url not like", value, "picture_url");
+        public Criteria andPicture_idNotIn(List<Long> values) {
+            addCriterion("picture_id not in", values, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlIn(List<String> values) {
-            addCriterion("picture_url in", values, "picture_url");
+        public Criteria andPicture_idBetween(Long value1, Long value2) {
+            addCriterion("picture_id between", value1, value2, "picture_id");
             return (Criteria) this;
         }
 
-        public Criteria andPicture_urlNotIn(List<String> values) {
-            addCriterion("picture_url not in", values, "picture_url");
-            return (Criteria) this;
-        }
-
-        public Criteria andPicture_urlBetween(String value1, String value2) {
-            addCriterion("picture_url between", value1, value2, "picture_url");
-            return (Criteria) this;
-        }
-
-        public Criteria andPicture_urlNotBetween(String value1, String value2) {
-            addCriterion("picture_url not between", value1, value2, "picture_url");
+        public Criteria andPicture_idNotBetween(Long value1, Long value2) {
+            addCriterion("picture_id not between", value1, value2, "picture_id");
             return (Criteria) this;
         }
 
@@ -352,66 +342,6 @@ public class ArticlePictureExample {
 
         public Criteria andCreate_byNotBetween(Date value1, Date value2) {
             addCriterion("create_by not between", value1, value2, "create_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byIsNull() {
-            addCriterion("modified_by is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byIsNotNull() {
-            addCriterion("modified_by is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byEqualTo(Date value) {
-            addCriterion("modified_by =", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byNotEqualTo(Date value) {
-            addCriterion("modified_by <>", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byGreaterThan(Date value) {
-            addCriterion("modified_by >", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("modified_by >=", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byLessThan(Date value) {
-            addCriterion("modified_by <", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byLessThanOrEqualTo(Date value) {
-            addCriterion("modified_by <=", value, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byIn(List<Date> values) {
-            addCriterion("modified_by in", values, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byNotIn(List<Date> values) {
-            addCriterion("modified_by not in", values, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byBetween(Date value1, Date value2) {
-            addCriterion("modified_by between", value1, value2, "modified_by");
-            return (Criteria) this;
-        }
-
-        public Criteria andModified_byNotBetween(Date value1, Date value2) {
-            addCriterion("modified_by not between", value1, value2, "modified_by");
             return (Criteria) this;
         }
     }

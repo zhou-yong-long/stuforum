@@ -9,8 +9,6 @@ public class ArticleContent {
 
     private Date create_by;
 
-    private Date modifield_by;
-
     private String content;
 
     public Long getId() {
@@ -35,14 +33,6 @@ public class ArticleContent {
 
     public void setCreate_by(Date create_by) {
         this.create_by = create_by;
-    }
-
-    public Date getModifield_by() {
-        return modifield_by;
-    }
-
-    public void setModifield_by(Date modifield_by) {
-        this.modifield_by = modifield_by;
     }
 
     public String getContent() {
