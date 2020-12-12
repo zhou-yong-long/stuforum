@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public class ArticleServiceImplTest {
     @Autowired
-    ArticleService articleService ;
+    ArticleService articleService;
     @Test
     public void addArticle() {
         System.out.println(articleService.addArticle());
